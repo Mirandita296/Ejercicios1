@@ -1,4 +1,3 @@
-mensaje de operadores
 var=10
 print("OPERADORES DE ARITMÉTICOS")
 print("-"*30)
