@@ -11,13 +11,14 @@ print("CADENAS Y CADENAS")
 print("-"*30)
 cad="Esta es una 'cadena con comillas simples' dentro de comillas dobles"
 print(cad)
+cad=cad+"\n algo"
+print(cad)
 print(cad[0])
-# cad[0]='e'  #Error, las cadenas son inmutables
+#cad[0]='e'  #Error, las cadenas son inmutables
 lenguaje="Python"
 descripcion="Este es un buen curso"
 frase=descripcion+" de "+lenguaje
 print(frase)
-
 print("-"*30)
 print("CADENAS Y NUMEROS")
 print("-"*30)
@@ -69,3 +70,18 @@ print(texto_multilinea)
 cadena_limpia=texto_multilinea.replace("[]","")\
     .replace("**","").replace("$$","")
 print(cadena_limpia)
+print("-"*30)
+print("CADENAS FORMATEADAS")
+print("-"*30)
+nombre="Gabriel"
+edad=28
+mensaje="Mi nombre es {} y tengo {} años.".format(nombre,edad)
+print(mensaje)
+mitote="""Para enterarlos que 
+el dia de ayer me encontré con {}
+que no veía desde que se graduó con {}.
+y ahora resulta que ya no vive con {}
+el que eras amigo de {}
+porque se juntó con {}"""
+mitote_completo=mitote.format(*nombres.split(","))
+print(mitote_completo)
